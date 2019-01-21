@@ -215,23 +215,28 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-}
-
-.features article {
+  }
+  
+  .features h2 {
+    margin-bottom: 60px;
+  }
+  
+  .features article {
     width: 55%;
     margin: 30px 0;
-}
-
-.features .features-items {
+  }
+  
+  .features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
-
-.features p {
+  }
+  
+  .features p {
     margin: 0;
-}
+  }
+  
 
 /* Reviews Section Styles */
 
@@ -441,20 +446,20 @@ aside {
  
     .features article {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        flex-flow: row;
+        flex-flow: column wrap;
         flex-basis: 50%;
     }
  
     .features .features-item-description {
-        width: 40%;
+        width: 50%;
     }
  
     /* Reviews */
     .reviews article {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     .reviews article div {
@@ -524,6 +529,62 @@ aside {
 
 @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+    .content-wrapper {
+        max-width: 960px;
+   }
+
+    /* Hero */
+   .hero-area h1 {
+       width: 60%;
+   }
+
+   /* Aside */
+   aside .content-wrapper {
+       justify-content: space-around;
+   }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+       width: 30%;
+   }
+
+   /* Features */
+   .features h2 {
+       width: 70%;
+   }
+
+   .features article {
+       flex-basis: 33%;
+   }
+
+   /* Reviews */ 
+   .reviews article div {
+       width: 42%;
+   }
+
+/* ==========================================================================
+  About Page
+  ========================================================================== */
+   .mission h2,
+   .contact-section .content-wrapper h2 {
+       width: 100%;
+   }
+
+   .contact-section .content-wrapper h2 {
+       margin-bottom: 40px;
+   }
+
+
+/* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+   .faq h2 {
+       width: 100%;
+   }
+
+   .faq-content {
+       flex-basis: 35%;
+   }
 
 }
 
